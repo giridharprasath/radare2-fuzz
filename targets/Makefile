@@ -9,7 +9,7 @@ ifndef LIB_FUZZING_ENGINE
 endif
 
 build: $(SRC)
-	${CXX} ${CXXFLAGS} $^ -o $(basename $^) ${LDFLAGS} -I ${LIB_FUZZING_ENGINE} ; \
+	${CXX} ${CXXFLAGS} $^ -o $(basename $^) ${LDFLAGS} -I ${LIB_FUZZING_ENGINE} /usr/local/include/libr /usr/local/include/libr/sdb ; \
 
 clean: $(SRC)
 	rm -f $(basename $^)
